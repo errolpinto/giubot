@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'httparty'
 require 'json'
-Rails.logger = Logger.new(STDOUT)
 
 logger.debug "Showing user: "
 
