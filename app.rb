@@ -2,6 +2,12 @@ require 'sinatra'
 require 'httparty'
 require 'json'
 
+<%= debug @post %>
+<p>
+  <b>Title:</b>
+  <%=h @post.title %>
+</p>
+
 post '/gateway' do
   message = params[:text].gsub(params[:trigger_word], '').strip
 
